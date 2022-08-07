@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <title>projeto 03 - opções</title>
+</head>
+<body>
+    <main>
+        <article class="conteiner article_interface">
+            <section id="config">
+                <h4 class="sub_titulo">configuração:</h4>
+                <div class="opcao_input">
+                    <input type="number" id="tamanho_letra" placeholder="1em">
+                    <label for="tamanho_letra">Tamanho da letra:</label>
+                </div>
+                <div class="opcao_input">
+                    <input type="text" id="modificar_nome" placeholder="Nome">
+                    <label for="modificar_nome">Modificar o nome:</label>
+                </div>
+                <div class="opcao_input">
+                    <input type="color" id="trocar_cor" placeholder="Nome">
+                    <label for="trocar_cor">Modificar a cor:</label>
+                </div>
+                <div class="opcao_input">
+                    <select id="fonte">
+                        <option value="1" style="--font: 'BhuTuka Expanded One',
+                cursive;">BhuTuka Expanded One</option>
+                        <option value="2" style="--font: 'Mouse Memoirs', 
+                sans-serif;">Mouse Memoirs</option>
+                        <option value="3" style="--font: 'Uchen',
+                serif;">Uchen</option>
+                        <option value="4" style="--font: 'Open Sans',
+                sans-serif;">Open Sans</option>
+                        <option value="5" style="--font: 'Roboto',
+                sans-serif;">Roboto</option>
+                    </select>
+                    <label for="fonte">Modificar a fonte:</label>
+                </div>
+                <div class="switch__container">
+                    <span>adicionar animação:</span>
+                    <input id="add_animacao" class="switch switch--shadow" type="checkbox" />
+                    <label for="add_animacao"></label>
+                </div>
+                <div class="switch__container">
+                    <span>adiconar sombra:</span>
+                    <input id="add_sombra" class="switch switch--shadow " type="checkbox" />
+                    <label for="add_sombra"></label>
+                </div>
+
+                <div class="switch__container atalho">
+                    <span>adiconar atalho:</span>
+                    <input id="add_atalho" class="switch switch--shadow" type="checkbox" />
+                    <label for="add_atalho"></label>
+                </div>
+
+                <div class="center">
+                <button id="salvar">salvar alteração</button>
+                </div>
+            </section>
+            <section id="interface">
+                <h4 id="texto_para_mod">texto</h4>
+                <span class="tecla_de_atalho hidden">aperta <strong>enter</strong> para salvar</span>
+            </section>
+        </article>
+    </main>
+
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+@media only screen and (max-device-width: 900px) {
+.article_interface{
+    display: flex;
+    flex-direction: column;
+}
+
+#config,
+#interface{
+    width: 100%;
+    border-radius: 0px;
+}
+
+#config{
+    width: 95%;
+    overflow-x: hidden;
+}
+
+.opcao_input{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+}
+
+.atalho{
+    display: none;
+}
+
+.switch__container span{
+    padding-right: 10px;
+}
+
+#interface{
+    overflow-y: hidden;
+    align-items: flex-start;
+}
+}

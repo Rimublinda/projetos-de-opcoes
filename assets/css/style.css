@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=BhuTuka+Expanded+One&family=Mouse+Memoirs&family=Uchen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&family=Roboto:ital,wght@1,300&display=swap');
+
+body{
+    background-image: linear-gradient(to left ,#001457, #040495, #001457);
+    width: 100%;
+    height: 100vh;
+}
+
+.conteiner{
+    width: 100%;
+    height: 100vh;
+}
+
+.article_interface{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#config{
+    width: 45%;
+    height: 70vh;
+    background-color: rgb(0, 131, 131);
+    overflow-y: scroll;
+    padding-left: 15px;
+    border-radius: 40px 0px 0px 40px;
+}
+
+#config::-webkit-scrollbar {
+    width: 17px;
+}
+
+#config::-webkit-scrollbar-track {
+    background: #00107b;
+}
+
+#config::-webkit-scrollbar-thumb {
+    background-color: #5e5eff;
+    border-radius: 20px;
+    border: 3px solid #011047;
+}
+.sub_titulo{
+    width: 100%;
+    font-size: 2em;
+    margin-bottom: 1.5pc;
+    text-align: center;
+    text-transform: capitalize;
+    letter-spacing: 5px;
+}
+
+.opcao_input{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.opcao_input input{
+    width: 6pc;
+    height: 35px;
+    border-radius: 35px;
+    font-size: 1.5em;
+    text-align: center;
+    outline: none;
+}
+
+.opcao_input label{
+    font-size: 1.7em;
+    margin-right: 10px;
+}
+
+#modificar_nome{
+    width: 15pc;
+    text-align: start;
+    padding-left: 10px;
+}
+
+#trocar_cor{
+    width: 3pc;
+    height: 3pc;
+    border-radius: 0%;
+}
+
+#fonte{
+    width: 300px;
+    height: 38px;
+    text-align: center;
+    border-radius: 50px;
+    border: 3px solid #5b5b5b;
+    background-color: rgba(0, 0, 0, 0.608);
+    color: #fff;
+    text-shadow: 3px 2px 3px #000;
+    font-size: 1.3em;
+}
+
+#fonte option{
+    font-family: var(--font);
+    text-shadow: 3px 2px 3px #000;
+    background-color: rgba(0, 0, 0, 0.798);
+}
+
+.switch__container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.switch__container span{
+    font-size: 1.9em;
+    padding-right: 20px;
+    text-transform: capitalize;
+}
+
+.switch {
+    width: 170px;
+    visibility: hidden;
+    position: absolute;
+    margin-left: -9999px;
+}
+
+.switch+label {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    user-select: none;
+}
+
+.switch--shadow+label {
+    padding: 2px;
+    width: 60px;
+    height: 30px;
+    background-color: #dddddd;
+    border-radius: 60px;
+}
+
+.switch--shadow+label:before,
+.switch--shadow+label:after {
+    display: block;
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    bottom: 1px;
+    content: "";
+}
+
+.switch--shadow+label:before {
+    right: 1px;
+    background-color: #f1f1f1;
+    border-radius: 60px;
+    transition: background 0.4s;
+}
+
+.switch--shadow+label:after {
+    width: 32px;
+    background-color: #fff;
+    border-radius: 100%;
+    box-shadow: 0 2px 5px rgb(0, 0, 0);
+    transition: all 0.4s;
+}
+
+.switch--shadow:checked+label:before {
+    background-color: #0c961c;
+}
+
+.switch--shadow:checked+label:after {
+    transform: translateX(30px);
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+}
+
+#salvar{
+    width: 16pc;
+    height: 44px;
+    text-transform: uppercase;
+    margin-bottom: 2pc;
+    margin-top: 1.5pc;
+    background-color: #00107b;
+    box-shadow: 0px 10px 0px rgb(5, 0, 53);
+    border: none;
+    color: #fff;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+#salvar:active{
+    box-shadow: none;
+    position: relative;
+    top: 5px;
+}
+
+#interface {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    word-wrap: break-word;
+    height: 70vh;
+    overflow-x: scroll;
+    background-image: linear-gradient(to left ,#606060, #a0a0a0, #606060);
+    border-radius: 0px 40px 40px 0px;
+}
+
+#texto_para_mod{
+    font-size: 3em;
+    margin-top: 1pc;
+    margin-bottom: 1pc;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.hidden{
+    visibility: hidden;
+}
+
+.tecla_de_atalho{
+    font-size: 3em;
+    color: rgb(255, 0, 0);
+    text-shadow: 3px 2px 3px #000;
+    font-weight: 800;
+}
